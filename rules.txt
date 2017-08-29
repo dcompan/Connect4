@@ -1,0 +1,38 @@
+// IA - P1 - Archivo de reglas para el juego de las 4 en raya
+// ==========================================================
+
+// 1 casilla adyacente (Valoraciones bases)
+#    H  1
+#z HVD  2 // =   3
+#_   H  4 // =   5
+#_   D  9 // =  10
+#O HVD 50 // =  51
+
+// 2 casillas adyacentes
+#Oz HVD  10 // =  61
+O#z HVD   8 // =  61
+#O_ HVD  20 // =  71
+O#_ HVD  20 // =  71
+#OO HVD 100 // = 151
+O#O HVD 100 // = 151
+
+// 3 casillas adyacentes utiles
+=OOO   HD  -200
+#OzO   HD   240 // = 301
+O#zO   HD   240 // = 301
+#XX_  HVD   500
+X#X_  HVD   500
+#OO_  HVD   550 // = 701
+=XXX  HVD -1000
+X=XX  HVD -1000
+_O#O_ HVD  1500
+#XXX  HVD  2000
+X#XX  HVD  2000
+#OOO  HVD   MAX
+O#OO  HVD   MAX
+
+// Proximidad a la pared
+#I   HVD -10
+#EI  HVD -10
+#EEI HVD -10
+
