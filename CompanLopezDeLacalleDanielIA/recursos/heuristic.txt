@@ -1,0 +1,20 @@
+// IA - P2 - Archivo de heuristica para el juego de las 4 en raya
+// ==============================================================
+
+#OOO HVD 4
+
+#OOE HVD 3
+#OEO HVD 3
+#EOO HVD 3
+
+#OEE HVD 2
+#EOE HVD 2
+#EEO HVD 2
+
+#EEE HVD 1
+
+#XXE HVD 2
+#XEX HVD 2
+#EXX HVD 2
+
+#XXX HVD 3 
